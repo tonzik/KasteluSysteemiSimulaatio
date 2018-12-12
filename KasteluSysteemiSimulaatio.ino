@@ -236,46 +236,45 @@ void kasteleKukat() {
     Serial.print("Laitetaan pumppu päälle | pumppu: ");
     Serial.println(pumppuTila);
     Serial.println(" ");
+    // Tähän lisätään koodi pumpulle kun se avataan, esim. digitalWrite(pump, HIGH);
   }
-
-  // Tähän lisätään koodi pumpulle kun se avataan, esim. digitalWrite(pump, HIGH);
-
+  
   Serial.println("Nyt kastellaan...");
   Serial.println(" ");
   
   delay(kasteluAika);
 
-  // Tähän lisätään koodi pumpulle kun se suljetaan, esim. digitalWrite(pump, LOW);
-
   if (pumppuTila == 1) {
     pumppuTila = 0;
     Serial.print("Laitetaan pumppu kiinni | pumppu: ");
     Serial.println(pumppuTila);
-    //Serial.println(" ");
+    // Tähän lisätään koodi pumpulle kun se suljetaan, esim. digitalWrite(pump, LOW);
   }
 
   if (venttiiliReleTila1 == 1) {
     Serial.println("Venttiili 1 suljetaan");
-    //Serial.println(" ");
+    //Tähän lisätään koodi releille kun ne kastelun jälkeen suljetaan, esim:
+    // digitalWrite(relay1, LOW);
   }
 
   if (venttiiliReleTila2 == 1) {
     Serial.println("Venttiili 2 suljetaan");
-    //Serial.println(" ");
+    //Tähän lisätään koodi releille kun ne kastelun jälkeen suljetaan, esim:
+    // digitalWrite(relay2, LOW);
   }
 
   if (venttiiliReleTila3 == 1) {
     Serial.println("Venttiili 3 suljetaan");
-    //Serial.println(" ");
+    //Tähän lisätään koodi releille kun ne kastelun jälkeen suljetaan, esim:
+    // digitalWrite(relay3, LOW);
   }
 
   if (venttiiliReleTila4 == 1) {
     Serial.println("Venttiili 4 suljetaan");
-    //Serial.println(" ");
+    //Tähän lisätään koodi releille kun ne kastelun jälkeen suljetaan, esim:
+    // digitalWrite(relay4, LOW);
   }
   
-
-
   // Tähän lisätään koodi releille kun ne kastelun jälkeen suljetaan, esim:
   // digitalWrite(relay1, LOW);
   // digitalWrite(relay2, LOW);
